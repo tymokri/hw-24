@@ -1,0 +1,81 @@
+$main-font: 'Montserrat', sans-serif;
+
+$font-xxs: 12px;
+$font-xs: 14px;
+$font-sm: 16px;
+$font-m: 18px;
+$font-md: 19px;
+$font-l: 20px;
+$font-lg: 22px;
+$font-x: 24px;
+$font-xl: 30px;
+$font-xx: 36px;
+$font-xxl: 38px;
+
+$font-w-normal: 400;
+$font-w-bold: 700;
+
+$white-color: #fff;
+$black-color: #000;
+$red-color: #FF0000;
+$bg-color: #F5F5FA;
+$bg-alt-color: #EDEDF7;
+$gray-text-color: #B3B3BA;
+$gray-separator-color: #E6E6F0;
+$bg-line-color: #E5E5E5;
+$dark-text-color: #46466E;
+$bg-opacity-color: rgba(245, 245, 250, 0.2);
+$line-opacity-color: rgba(255, 255, 255, 0.3);
+
+$accent-color: #F0145A;
+$main-color: #323264;
+$main-alt-color: #46466E;
+$main-alt-soft: #686887;
+$negative-color: #EC6F5D;
+
+$hillel-color: #1C4280;
+$wannabiz-color: #143646;
+$tapgerine-color: #F48B30;
+$dlook-color: #9E4DC3;
+$orangear-color: #FD9339;
+$atteligent-color: #E2E2E4;
+$clickky-color: #C71C36;
+$ecoleasing-color: #DCF3F9;
+$infratek-color: #EAEAEA;
+$citypark-color: #282240;
+$artprint-color: #1D4568;
+
+$active-color: #24A3FF;
+$active-hover-color: #0085FF;
+$active-active-hover-color: #006CCF;
+
+$box-shadow-blue: 0 0 20px rgba(36, 163, 255, 0.5);
+
+$shadow-color: #CACADB;
+$shadow-color-light: #E7E7F2;
+
+$gradient-super-soft: linear-gradient(225deg, #323264 0%, #323264 59.9%, #643E72 100%);
+$gradient-red-text: linear-gradient(90deg, #F0145A 0%, #EF8080 100%);
+
+$transition: 0.3s;
+$border-radius: 12px;
+
+.nav-link {
+  --bs-nav-link-color: #{$white-color};
+  --bs-navbar-active-color: #{$accent-color};
+  --bs-navbar-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-hover-color: #{$white-color};
+}
+
+.bg-gradient {
+  --bs-gradient: #{$gradient-super-soft};
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.container-xxl {
+  --bs-gutter-x: 0;
+}

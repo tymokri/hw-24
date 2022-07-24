@@ -1,0 +1,105 @@
+.clients {
+  margin-bottom: 60px;
+
+  &__title {
+    @extend %subtitle-uppercase;
+    color: $main-color;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__image {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &__wrapper {
+
+    :nth-child(1) {
+      a {
+        background-color: $hillel-color;
+      }
+    }
+
+    :nth-child(2) {
+      a {
+        background-color: $wannabiz-color;
+      }
+    }
+
+    :nth-child(3) {
+      a {
+        background-color: $tapgerine-color;
+      }
+    }
+
+    :nth-child(4) {
+      a {
+        background-color: $dlook-color;
+      }
+    }
+
+    :nth-child(5) {
+      a {
+        background-color: $orangear-color;
+      }
+    }
+
+    :nth-child(6) {
+      a {
+        background-color: $atteligent-color;
+      }
+    }
+
+    :nth-child(7) {
+      a {
+        background-color: $clickky-color;
+      }
+    }
+
+    :nth-child(8) {
+      a {
+        background-color: $ecoleasing-color;
+      }
+    }
+
+    :nth-child(9) {
+      a {
+        background-color: $infratek-color;
+      }
+    }
+
+    :nth-child(10) {
+      a {
+        background-color: $citypark-color;
+      }
+    }
+
+    :nth-child(11) {
+      a {
+        background-color: $artprint-color;
+      }
+    }
+
+    :nth-child(12) {
+      a {
+        background-color: $black-color;
+      }
+    }
+  }
+}

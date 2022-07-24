@@ -1,0 +1,119 @@
+.demo-contact {
+  margin-bottom: 60px;
+
+  &__info > div:not(:last-child) {
+    border-bottom: 4px $gray-separator-color solid;
+    
+    div {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info > div:not(:first-child) {
+    margin-top: 30px;
+  }
+  
+  &__form {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: $bg-color;
+  }
+
+  ::placeholder {
+    color: $gray-text-color;
+    opacity: 1;
+  }
+
+  .form-control {
+    border: none;
+    padding: 15px;
+
+    &:focus {
+      border: 1px $active-color solid;
+      box-shadow: none;
+    }
+
+    &:invalid {
+      border: 1px $red-color solid;
+    }
+  }
+
+  &__form-title {
+    @extend %title-red-lg;
+    font-size: 30px!important;
+    line-height: 37px!important;
+    margin-bottom: 30px;
+  }
+
+  &__form-subtitle {
+    @extend %form-subtitle;
+    padding: 15px 0;
+  }
+
+  &__form-button {
+    position: relative;
+    font-weight: $font-w-bold;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 18px;
+    background: $active-color;
+    box-shadow: $box-shadow-blue;
+    border: none;
+    outline: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &:hover {
+      background: $active-hover-color;
+    }
+
+    &:focus-within {
+      background: $bg-alt-color;
+      box-shadow: none;
+    }
+
+    &:active {
+      background: $active-active-hover-color;
+    }
+  }
+
+  &__form-textarea {
+    resize: none;
+  }
+
+  .button-text {
+    color: $white-color;
+    transition: all 0.3s;
+  }
+
+  .button-loading .button-text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .button-loading::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: $active-color;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+
+  @keyframes button-loading-spinner {
+    from {
+      transform: rotate(0turn);
+    }
+
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}

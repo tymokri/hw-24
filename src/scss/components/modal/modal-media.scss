@@ -1,0 +1,9 @@
+.modal {
+
+  @media (max-width: 375px) {
+    &-title {
+      font-size: $font-xl;
+      line-height: 36px;
+    }
+  }
+}

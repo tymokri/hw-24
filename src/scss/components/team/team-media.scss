@@ -1,0 +1,11 @@
+.team {
+
+  @media (max-width: 768px) {
+    &__title h1 {
+      font-size: $font-xl;
+      margin-bottom: 10px;
+      line-height: 37px;
+      padding: 0 10px;
+    }
+  }
+}

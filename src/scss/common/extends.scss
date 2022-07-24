@@ -1,0 +1,69 @@
+%title-red-lg {
+  font-size: $font-xxl;
+  font-weight: $font-w-bold;
+  line-height: 46px;
+  background:  #{$gradient-red-text};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+%title-red-md {
+  font-size: $font-xx;
+  font-weight: $font-w-bold;
+  line-height: 44px;
+  background:  #{$gradient-red-text};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+%title-bg-red-hover {
+  background: #{$gradient-red-text};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: $transition;
+}
+
+%subtitle-uppercase {
+  font-size: $font-xs;
+  font-weight: $font-w-bold;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+%form-subtitle {
+  font-size: $font-xs;
+  font-weight: $font-w-bold;
+  color: $gray-text-color;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+%subtitle-hover {
+  color: $accent-color;
+  cursor: pointer;
+  transition: $transition;
+}
+
+%text-date {
+  font-size: $font-xxs;
+  font-weight: $font-w-bold;
+  color: $gray-text-color;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+%button-blue {
+  padding: 18px 30px;
+  background-color: $active-color;
+  box-shadow: $box-shadow-blue;
+  border: none;
+  border-radius: $border-radius;
+}
+
+%bg-img-default {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}

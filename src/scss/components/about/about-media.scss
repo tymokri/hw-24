@@ -1,0 +1,17 @@
+.about {
+
+  @media (max-width: 768px) {
+    &__subtitle h2 {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__title h1,
+    &__subtitle h2 {
+      font-size: $font-xl;
+      line-height: 37px;
+    }
+  }
+}

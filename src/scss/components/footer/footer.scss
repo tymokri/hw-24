@@ -1,0 +1,58 @@
+.footer {
+  padding-bottom: 30px;
+  background-color: $bg-color;
+
+  &__content {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__address > div,
+  &__contact > div:not(:last-child) {
+    margin-right: 8px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $gray-text-color;
+      margin: 0 0 2px 10px;
+    }
+  }
+  
+  &__address {
+    margin-bottom: 21px;
+
+    a {
+      padding-top: 2px;
+      font-size: $font-xxs;
+      font-weight: $font-w-bold;
+      color: $active-color;
+      text-transform: uppercase;
+      line-height: 15px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__copyright {
+    color: $gray-text-color;
+    line-height: 20px;
+  }
+
+  &__phone,
+  &__mail {
+    font-weight: $font-w-bold;
+    line-height: 20px;
+  }
+
+  &__phone {
+    color: $dark-text-color;
+  }
+
+  &__mail {
+    color: $active-color;
+  }
+}

@@ -1,0 +1,55 @@
+.about {
+
+  &__title h1,
+  &__subtitle h2 {
+    @extend %title-red-lg;
+  }
+
+  &__title h1 {
+    margin-bottom: 30px;
+  }
+
+  &__subtitle h2 {
+    padding-left: 30px;
+    width: 362px;
+  }
+
+  &__description {
+    font-size: $font-md;
+    line-height: 30px;
+  }
+
+  &__advantages-line {
+    width: 4px;
+    height: 100%;
+    background-color: $gray-separator-color;
+  }
+
+  &__advantages-item {
+    &-wrapper {
+      padding-left: 30px;
+    }
+
+    &-wrapper > div:not(:last-child){
+      margin-bottom: 40px;
+    }
+
+    &-subtitle span {
+      @extend %title-red-md;
+      margin-bottom: 10px;
+    }
+    
+    &-subtitle-icon {
+      margin-right: 10px;
+    }
+  }
+
+  &__team-main-image {
+    margin-bottom: 40px;
+
+    img {
+      width: -webkit-fill-available;
+      height: 100%;
+    }
+  }
+}

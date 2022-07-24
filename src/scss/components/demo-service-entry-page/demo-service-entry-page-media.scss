@@ -1,0 +1,26 @@
+.demo-service-entry-page {
+
+  @media (max-width: 1024px) {
+    padding: 280px 0 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 150px 0 60px;
+  }
+
+  @media (max-width: 375px) {
+    &__title {
+      font-size: $font-xl;
+      line-height: 37px;
+    }
+
+    &__services-list-wrapper {
+      flex-direction: column;
+    }
+
+    &__services-list-left,
+    &__services-list-right {
+      width: 100%;
+    }
+  }
+}

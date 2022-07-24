@@ -1,0 +1,148 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 1;
+  font-size: $font-sm;
+  color: $white-color;
+  line-height: 19px;
+
+  &__content-wrapper {
+    position: relative;
+  }
+
+  &__top {
+    .container {
+      position: relative;
+      padding: 0;
+    }
+
+    &-content {
+      position: absolute;
+      content: '';
+      z-index: 1;
+      right: 0;
+      top: -16px;
+
+      & > div:not(:nth-child(n+4)),
+      & > div:nth-child(n+4):not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background-color: $white-color;
+        }
+      }
+
+      & > div:not(:nth-child(n+4)) {
+        &:after {
+          margin: 0 0 2px 3px;
+        }
+      }
+
+      & > div:nth-child(n+4):not(:last-child) {
+        &:after {
+          margin: 0 0 0 3px;
+        }
+      }
+    }
+
+    &-lang {
+      input[name="lang"] {
+        display: none;
+      }
+
+      label span {
+        display: inline-block;
+        font-weight: $font-w-bold;
+        letter-spacing: 1px;
+        padding: 5px 7px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      input[name="lang"]:checked + span {
+        background-color: $accent-color;
+      }
+
+      input[name="lang"]:hover + span {
+        background-color: $bg-opacity-color;
+        transition: $transition;
+      }
+    }
+
+    &-address a,
+    &-phone a {
+      font-size: $font-sm;
+      font-weight: $font-w-normal;
+      color: $white-color;
+      text-decoration: none;
+    }
+
+    &-phone a {
+      font-weight: $font-w-bold;
+    }
+
+    &-social a {
+      svg path:hover {
+        fill: $accent-color;
+        transition: $transition;
+      }
+    }
+
+    &-user-icon button svg:hover {
+      fill: $accent-color;
+      transition: $transition;
+    }
+  }
+
+  .navbar {
+    .container {
+      padding: 0;
+    }
+
+    &-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-slash {
+      margin-top: -20px;
+      padding-left: 10px;
+
+      &-slash {
+        color: $accent-color;
+        font-weight: $font-w-bold;
+      }
+
+      div {
+        font-size: $font-xx;
+        color: $white-color;
+        line-height: 24px;
+      }
+    }
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding-top: 15px;
+    }
+
+    .nav-link {
+      font-weight: $font-w-bold;
+      padding-bottom: 3px;
+
+      &:hover,
+      &.active {
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}

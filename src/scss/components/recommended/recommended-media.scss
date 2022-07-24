@@ -1,0 +1,17 @@
+.recommended {
+
+  @media (max-width: 1024px) {
+    &__item {
+      &-wrapper {
+        min-height:100%;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__title {
+     font-size: 30px!important;
+      line-height: 37px!important;
+    }
+  }
+}

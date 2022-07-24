@@ -1,0 +1,141 @@
+.header {
+
+  @media (min-width: 1024px) {
+    &__top-content {
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .navbar .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__top-content {
+      position: static;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & {
+      padding-top: 0;
+    }
+
+    .navbar {
+      padding: 15px 0 0;
+
+      &-brand {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          height: 36px;
+        }
+      }
+
+      &-toggler {
+        $icon-size: 35px;
+        padding: 5px;
+
+        &:hover {
+          background-color: $bg-opacity-color;
+          transition: $transition;
+        }
+
+        &:focus, &:focus-visible {
+          box-shadow: none;
+          background-color: $bg-opacity-color;
+        }
+
+        svg {
+          width: $icon-size;
+          height: $icon-size;
+          fill: $white-color;
+        }
+      }
+
+      &-collapse {
+        background-color: $white-color;
+        padding: 12px;
+        border-radius: 12px;
+        margin-top: 20px;
+
+        .nav-link {
+          font-size: $font-x;
+          color: $active-color;
+          background-color: $bg-color;
+          padding: 10px 0;
+          text-align: center;
+          border: none;
+          border-radius: 12px;
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: $gray-separator-color;
+            transition: $transition;
+          }
+
+          &.active {
+            color: $accent-color;
+            border-bottom: none;
+          }
+        }
+      }
+
+      &-slash {
+        margin-top: -11px;
+        padding-left: 0;
+
+        div {
+          font-size: $font-l;
+        }
+      }
+    }
+
+    &__top {
+      .container {
+        padding: 10px 15px;
+      }
+
+      &-content {
+        margin: 0;
+        justify-content: space-between;
+
+        & > div:not(:last-child):after {
+          content: unset;
+        }
+      }
+
+      &-address,
+      &-social {
+        display: none;
+      }
+
+      &-phone {
+        margin: 0!important;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .container {
+      padding: 0;
+    }
+
+    &__top {
+      background-color: $bg-opacity-color;
+      padding: 10px;
+    }
+
+    .navbar {
+      padding: 10px;
+    }
+  }
+}

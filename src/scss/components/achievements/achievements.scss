@@ -1,0 +1,81 @@
+.achievements {
+  background-color: $bg-color;
+  padding: 30px 0;
+
+  &__title h3 {
+    font-size: $font-xs;
+    color: $main-color;
+    font-weight: $font-w-bold;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__item-wrapper {
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    a {
+      width: 25%;
+    }
+  }
+
+  &__item {
+    background-color: $white-color;
+    border-radius: $border-radius;
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+    z-index: 1;
+
+    img {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  
+  &__controls {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-bottom: 30px;
+    border-bottom: 2px $gray-separator-color solid;
+
+    & div:nth-child(n+4) {
+      display: none;
+    }
+  }
+  
+  &__controls div:not(:first-child),
+  &__controls .active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__controls div:not(:first-child) {
+    background-color: $active-color;
+    opacity: 20%;
+
+    &:hover {
+      opacity: 100%;
+      transition: $transition;
+    }
+  }
+
+  &__controls .active {
+    background-color: $active-color;
+    opacity: 100%;
+  }
+}

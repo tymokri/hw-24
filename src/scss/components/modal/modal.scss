@@ -1,0 +1,58 @@
+.modal {
+
+  &-header {
+    align-items: start;
+  }
+
+  &-title {
+    @extend %title-red-lg;
+  }
+
+  &-body {
+    .form-subtitle {
+      @extend %form-subtitle;
+      padding: 15px 0;
+    }
+  }
+
+  a {
+    border: none;
+    background: none;
+    svg {
+      fill: $negative-color;
+    }
+  }
+
+  &-footer {
+    padding: 0 2rem 2rem;
+
+    button {
+      width: 100%;
+      background: $active-color;
+      font-weight: $font-w-bold;
+      line-height: 20px;
+      letter-spacing: 1px;
+      padding: 18px;
+      box-shadow: $box-shadow-blue;
+      border: none;
+      outline: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+    }
+  }
+
+  .form-control {
+    font-size: $font-sm;
+    border: none;
+    padding: 15px;
+  }
+
+  ::placeholder {
+    color: $gray-text-color;
+    opacity: 1;
+  }
+
+  &-body textarea {
+    resize: none;
+  }
+}

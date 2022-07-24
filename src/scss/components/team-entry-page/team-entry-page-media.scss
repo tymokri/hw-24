@@ -1,0 +1,92 @@
+.team-entry-page {
+
+  @media (min-width: 1600px) {
+    height: calc(100vh - 330px);
+  }
+
+  @media (max-width: 1440px) {
+    .container-form {
+      max-width: 1120px;
+    }
+    
+    &__item-description-wrapper {
+      padding-left: 60px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container-form {
+      max-width: 904px;
+    }
+
+    &__item-description-wrapper {
+      padding-left: 20px;
+    }
+
+    &__item {
+      &-image {
+        width: 350px;
+        height: 400px;
+
+        img {
+          border-radius: $border-radius;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-contact {
+        flex-direction: column;
+      }
+
+      &-work-status,
+      &-mail {
+        margin-bottom: 10px;
+      }
+
+      &-contact > div:not(:last-child) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container-form {
+      max-width: 648px;
+      padding: 0 15px;
+    }
+
+    &__item-description-wrapper {
+      padding-left: 0;
+    }
+
+    &__item {
+      &-image {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-title h1 {
+        padding-top: 30px;
+      }
+
+      &-contact {
+        flex-direction: column;
+      }
+
+      &-work-status,
+      &-mail {
+        margin-bottom: 10px;
+      }
+
+      &-contact > div:not(:last-child) {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

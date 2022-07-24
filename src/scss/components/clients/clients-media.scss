@@ -1,0 +1,22 @@
+.clients {
+
+  @media (min-width: 1600px) {
+    .container-xxl {
+      border-radius: $border-radius;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1440px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 648px) {
+    &__wrapper {
+
+      :nth-child(n+7) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.demo-publication-entry-page {
+
+  @media (max-width: 768px) {
+    &__description img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__main-image {
+      height: 300px;
+    }
+
+    &__title h2 {
+      font-size: $font-xl;
+      line-height: 37px;
+    }
+
+    &__img-subtitle h3 {
+      font-size: $font-l;
+      line-height: 24px;
+    }
+  }
+}

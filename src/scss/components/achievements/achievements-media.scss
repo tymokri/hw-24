@@ -1,0 +1,32 @@
+.achievements {
+
+  @media (max-width: 768px) {
+    &__item-wrapper a:first-child {
+      img {
+        height: 50%;
+        width: auto;
+      }
+    }
+
+    &__item {
+      img {
+        width: -webkit-fill-available;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    &__item-wrapper a:not(:first-child) {
+      display: none;
+    }
+
+    &__item-wrapper a {
+      width: 100%;
+    }
+
+    &__controls div:nth-child(n+4) {
+      display: inherit;
+    }
+  }
+}

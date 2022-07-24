@@ -1,0 +1,125 @@
+.header-alternative {
+  background-color: $white-color;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  font-size: $font-sm;
+  color: $gray-text-color;
+  line-height: 19px;
+
+  &__top {
+    .container {
+      padding: 0;
+    }
+
+    &-content {
+      & > div:not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background-color: $gray-separator-color;
+          margin: 0 0 2px 3px;
+        }
+      }
+    }
+
+    &-lang {
+      input[name="lang"] {
+        display: none;
+      }
+
+      label span {
+        display: inline-block;
+        font-weight: $font-w-bold;
+        letter-spacing: 1px;
+        padding: 5px 7px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      input[name="lang"]:checked + span {
+        background-color: $accent-color;
+        color: $white-color;
+      }
+
+      input[name="lang"]:hover + span {
+        background-color: $bg-color;
+        transition: $transition;
+      }
+    }
+
+    &-address a,
+    &-phone a {
+      font-size: $font-sm;
+      font-weight: $font-w-normal;
+      color: $gray-text-color;
+      text-decoration: none;
+    }
+
+    &-phone a {
+      font-weight: $font-w-bold;
+    }
+
+    &-social a {
+      svg path:hover {
+        fill: $accent-color;
+        transition: $transition;
+      }
+    }
+  }
+
+  .navbar {
+    .container {
+      padding: 0;
+    }
+
+    &-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-slash {
+      margin-top: -20px;
+      padding-left: 10px;
+
+      &-slash {
+        color: $accent-color;
+        font-weight: $font-w-bold;
+      }
+
+      div {
+        font-size: $font-xx;
+        color: $main-color;
+        line-height: 24px;
+      }
+    }
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding-top: 15px;
+    }
+
+    .nav-link {
+      color: $active-color;
+      font-weight: $font-w-bold;
+      padding-bottom: 3px;
+
+      &.active {
+        color: $accent-color;
+      }
+
+      &:hover,
+      &.active {
+        border-bottom: 2px solid;
+      }
+    }
+  }
+}
